@@ -15,7 +15,9 @@ export function Welcome() {
             />
           </div>
         </header>
-        <a href="/subpage/">Go to Subpage</a>
+        <a className="text-black" href="/subpage/">
+          Go to Subpage
+        </a>
         <SwaggerUI url="https://petstore.swagger.io/v2/swagger.json" />
       </div>
     </main>
