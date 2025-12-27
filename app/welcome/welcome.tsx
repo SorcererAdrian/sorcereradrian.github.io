@@ -1,4 +1,5 @@
-import SwaggerUI from 'swagger-ui-react'
+// import SwaggerUI from 'swagger-ui-react'
+import { ApiReferenceReact } from '@scalar/api-reference-react'
 
 import logoLight from './logo-light.svg'
 
@@ -18,7 +19,12 @@ export function Welcome() {
         <a className="text-black" href="/subpage/">
           Go to Subpage
         </a>
-        <SwaggerUI url="https://petstore.swagger.io/v2/swagger.json" />
+        {/* <SwaggerUI url="https://petstore.swagger.io/v2/swagger.json" /> */}
+        <ApiReferenceReact
+          configuration={{
+            url: 'https://petstore.swagger.io/v2/swagger.json',
+          }}
+        />
       </div>
     </main>
   )

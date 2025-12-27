@@ -9,6 +9,7 @@ import {
 
 import type { Route } from './+types/root'
 import 'swagger-ui-react/swagger-ui.css'
+import '@scalar/api-reference-react/style.css'
 import './app.css'
 
 export const links: Route.LinksFunction = () => [
